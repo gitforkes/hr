@@ -72,7 +72,7 @@
 </div>
 <!--发布招聘需求-->
 <div class="login-end container" id="bro">
-    <form class="form-search" action="http://localhost:8866/admin/article/upload" method="post"
+    <form class="form-search" action="http://localhost:8081/admin/article/upload" method="post"
           enctype="multipart/form-data" id="form1">
         <div class="control-group row-fluid">
             <label class="control-label span1">公司名称</label>
@@ -189,6 +189,7 @@
         });
         //发布信息
         oSend.on('click', function () {
+	console.log	('发布信息了');	
             $("#form1").ajaxSubmit({
                 type: 'post',
                 dataType: 'json',
