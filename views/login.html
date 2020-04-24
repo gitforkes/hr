@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/public/css/login.css">
     <link rel="stylesheet" href="/public/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/bootstrap-responsive.min.css">
+    <script src="/public/js/jquery.js"></script>
     <script src="/public/js/jquery.form.js"></script>
 </head>
 <body>
@@ -72,7 +73,7 @@
 </div>
 <!--发布招聘需求-->
 <div class="login-end container" id="bro">
-    <form class="form-search" action="http://localhost:8081/admin/article/upload" method="post"
+    <form class="form-search" action="http://www.zzxwd.com:8081/admin/article/upload" method="post"
           enctype="multipart/form-data" id="form1">
         <div class="control-group row-fluid">
             <label class="control-label span1">公司名称</label>
@@ -189,7 +190,7 @@
         });
         //发布信息
         oSend.on('click', function () {
-	console.log	('发布信息了');	
+             console.log('发布信息了');	
             $("#form1").ajaxSubmit({
                 type: 'post',
                 dataType: 'json',
