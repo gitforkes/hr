@@ -40,7 +40,7 @@ mongoose.connect('mongodb://localhost:27017/hr', function (err) {
     } else {
         console.log('数据库连接成功, ok!');
         //端口监听
-        app.listen(8081);
+        app.listen(80);
     }
 });
 
